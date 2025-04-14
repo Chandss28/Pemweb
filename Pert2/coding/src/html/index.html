@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Learning - Pert 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg" style="background-color: #003366;"> <!-- Background biru tua -->
+    <div class="container-fluid">
+
+        <img src="../assets/ESGUL-LOGO-removebg-preview.png" alt="Bootstrap" width="40" height="34">
+        <a class="navbar-brand text-white" href="#">Navbar</a> <!-- Teks menjadi putih -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a> <!-- Teks menjadi putih -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Link</a> <!-- Teks menjadi putih -->
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-white" href="#">Action</a></li> <!-- Teks menjadi putih -->
+                        <li><a class="dropdown-item text-white" href="#">Another action</a></li> <!-- Teks menjadi putih -->
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-white" href="#">Something else here</a></li> <!-- Teks menjadi putih -->
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a> <!-- Teks menjadi putih -->
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success text-white" type="submit">Search</button> <!-- Teks menjadi putih -->
+            </form>
+        </div>
+    </div>
+</nav>
+    <!-- END NAVBAR -->
+    <!-- PROFILE -->
+    <div class="row justify-content-center">
+        <div class="col-lg-5">
+            <div class="card mb-4" style="background-color: #adb5bd;"> <!-- Mengubah background menjadi abu lebih pekat -->
+                <div class="card-body text-center">
+                    <img src="../assets/1653991048491.jpg" alt="Chandika Eka Prasetya" class="rounded-circle img-fluid object-fit-cover border border-2 border-secondary" style="width: 150px; height: 150px; object-fit: cover; object-position: center;">
+                    <h5 class="my-3">Chandika Eka Prasetya</h5>
+                    <p class="text-muted mb-1">Fakultas Ilmu Komputer</p>
+                    <p class="text-muted mb-4">Teknik Informatika</p>
+                    <div class="d-flex justify-content-center gap-2 mb-2">
+                        <button type="button" class="btn btn-outline-primary border-2">Jakarta</button>
+                        <button type="button" class="btn btn-outline-primary border-2">14 April 2025</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ABOUT -->
+    <div class="card-body p-4 text-black justify-content-center">
+        <div class="mb-2 text-body"> 
+            <p class="lead fw-normal mb-1 text-center"> ABOUT ME</p>
+        </div>
+        <div class="p-4 bg-body-tertiary">
+            <p class=""font-italic mb-1> Saya adalah Mahasiswa Universitas Esa Unggul Kampus Tangerang Citra Raya semester 4 yang saat ini sedang mempelajari Pemweb</p>
+        </div>
+    </div>
+    <!-- ENDABOUT -->
+
+    <!-- LINKEDPERSONAL -->
+    <div class="card mb-4 mb-lg-0">
+        <div class="card-body p-0">
+            <h1>Connect with Me</h1>
+            <ul class="list-group list-group-flush rounded-3">
+                <!-- University Logo -->
+                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                    <a href="https://esaunggul.ac.id" target="_blank">
+                        <img src="../assets/ESGUL-LOGO-removebg-preview.png" alt="University Logo" class="me-2" style="width: 40px; height: auto;">My University Website
+                    </a>
+                </li>
+                <!-- Instagram Logo -->
+                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                    <a href="https://www.instagram.com/chandika28_?igsh=MWFlMG84NGNhdXFsZA==" target="_blank">
+                        <img src="data:image/jpeg;base64,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" alt="Instagram Logo" class="me-2" style="width: 40px; height: auto;">My Instagram
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END LINKEDPERSONAL -->
+
+    <!-- FOOTER -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p class = "text-muted">28Racing&copy;2025</p>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</html>

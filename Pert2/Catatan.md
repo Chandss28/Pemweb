@@ -1,0 +1,1 @@
+1. Membuat tampilan Page Profile yang berisi data diri
