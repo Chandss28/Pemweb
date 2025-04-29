@@ -1,10 +1,8 @@
 - ➜  coding git:(main) ✗ docker ps
 - ➜  coding git:(main) ✗ docker exec -it pemweb bash
 - root@pemweb:/var/www/html# composer create-project --prefer-dist raugadh/fila-starter .
-
 - root@pemweb:/var/www/html# rm -rf *
 - root@pemweb:/var/www/html# composer create-project --prefer-dist raugadh/fila-starter .
-
 - root@pemweb:/var/www/html# rm -rf .*
 - root@pemweb:/var/www/html# ls
 
@@ -37,7 +35,7 @@
 - root@pemweb:/var/www/html# php artisan db:seed --force
 - Lalu error minta guard, ketik php artisan shield:generate --all
 - root@pemweb:/var/www/html# php artisan project:init
-- root@pemweb:/var/www/html# php acmod 777 -R bootstrap/*
+- root@pemweb:/var/www/html# chmod 777 -R storage/* && chmod 777 -R bootstrap/*
 
 # Buka localhost di chrome
 - localhost/admin/login
@@ -56,11 +54,13 @@ clear? Logout.
             - livewire isinya show-about.blade.php, show-home-page.blade, show-profile.blade.php,
     - src - public - buat folder bebas apa aja namanya itu buat naruh html, css, js, plugins, asset atau gambar, dll
 
+- php artisan make:model Product -msc
+- php artisan make:model PageConfig -msc
+- php artisan make:model Seo -msc
+- php artisan make:model Footer -msc
+- php artisan make:model Logo -msc
+- 
 
-
-
------
-root@pemweb:/var/www/html# php artisan make:model Product -msc
 
 
 
